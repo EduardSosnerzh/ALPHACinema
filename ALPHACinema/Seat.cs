@@ -16,10 +16,6 @@ namespace ALPHACinema
     {
         public SeatState State { get; private set; } = SeatState.Free;
 
-        public bool IsFree()
-        {
-            return State == SeatState.Free;
-        }
         public void Reserve()
         {
             State = SeatState.Reserved;
